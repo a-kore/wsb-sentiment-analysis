@@ -10,9 +10,9 @@ import os
 
 def init_subreddit():
      reddit = praw.Reddit(
-     client_id=os.environ['CLIENT_ID'],
-     client_secret=os.environ['CLIENT_SECRET'],
-     user_agent=os.environ['USER_AGENT']
+     client_id="H7dnHRdbZMBsdtyGpycH6w",
+     client_secret="K2CMXVbSx41AgGcjr69dBx4DaavA8A",
+     user_agent="prawdummy"
      )
      for submission in reddit.subreddit("wallstreetbets").hot(limit=1):
           thread = submission
