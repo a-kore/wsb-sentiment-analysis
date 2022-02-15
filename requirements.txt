@@ -53,6 +53,8 @@ pexpect==4.8.0
 pickleshare==0.7.5
 Pillow==8.4.0
 plotly==5.6.0
+praw==7.5.0
+prawcore==2.3.0
 prometheus-client==0.13.1
 prompt-toolkit==3.0.28
 protobuf==3.19.4
@@ -90,10 +92,12 @@ transformers==4.16.2
 typing_extensions==4.1.1
 tzdata==2021.5
 tzlocal==4.1
+update-checker==0.18.0
 urllib3==1.26.8
 validators==0.18.2
 watchdog==2.1.6
 wcwidth==0.2.5
 webencodings==0.5.1
+websocket-client==1.2.3
 widgetsnbextension==3.5.2
 zipp==3.6.0
