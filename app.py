@@ -6,13 +6,13 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification
 from scipy.special import softmax
 from datetime import datetime
 import plotly.express as px
-
+import os
 
 def init_subreddit():
      reddit = praw.Reddit(
-     client_id="H7dnHRdbZMBsdtyGpycH6w",
-     client_secret="K2CMXVbSx41AgGcjr69dBx4DaavA8A",
-     user_agent="prawdummy"
+     client_id=os.environ['CLIENT_ID'],
+     client_secret=os.environ['CLIENT_SECRET'],
+     user_agent=os.environ['USER_AGENT']
      )
      for submission in reddit.subreddit("wallstreetbets").hot(limit=1):
           thread = submission
